@@ -29,8 +29,8 @@ const root = new Vue({
     data: {
         newTasks: '',
         tasks: [
-            { text: 'Vedere le piramidi maya in Messico', done: true },
             { text: 'Bere caipirinha sulla spiaggia in Brasile', done: false },
+            { text: 'Vedere le piramidi maya in Messico', done: true },
             { text: 'Passare un capodanno a New York', done: true },
             { text: 'Visitare la città blu in Marocco', done: false },
             { text: 'Attraversare gli Stati Uniti sulla route 66', done: true },
@@ -46,8 +46,8 @@ const root = new Vue({
         // Funzione per aggiungere nuove task
         addNewTasks() {
             const newTask = this.newTasks.trim();
-            if(newTask) {
-                this.tasks.push({text: newTask , done: false});
+            if (newTask) {
+                this.tasks.push({ text: newTask, done: false });
             }
             this.newTasks = '';
             // Oppure uso lo spread
@@ -55,16 +55,31 @@ const root = new Vue({
         },
         // Toggle checkbox to reverse true/false
         toggleTasksCheck(index) {
-            const toggleTasks = this.tasks.map((task,i) => {
+            const toggleTasks = this.tasks.map((task, i) => {
                 if (i === index) task.done = !task.done;
-            return task;
+                return task;
             });
             this.tasks = toggleTasks;
             // Oppure
             // this.tasks[index].done = !this.tasks[index].done;
         },
+        // Funzione per cancellare tutti i task
         deleteAllTasks() {
             this.tasks = [];
-        }
+        },
+        // Funzione per segnare tutti i task come letti
+        marAllAsRead() {
+            this.tasks = this.tasks.map((task) => {
+                task.done = true;
+                return task;
+            });
+        },
+        // Funzione per segnare tutti i task come non letti
+        marAllAsUnread() {
+            this.tasks = this.tasks.map((task) => {
+                task.done = false;
+                return task;
+            });
+        },
     },
 });

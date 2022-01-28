@@ -54,8 +54,8 @@
                         <h3 v-else class="text-center"> Non ci sono altre task nella tua lista.</h3>
                         <div class="actions text-center">
                             <div class="btn-group" role="group" aria-label="Basic example">
-                                <button type="button" @click="" class="btn btn-light">Segna come letti</button>
-                                <button type="button" @click="" class="btn btn-info">Segna come non letti</button>
+                                <button type="button" @click="marAllAsRead" class="btn btn-light">Segna come letti</button>
+                                <button type="button" @click="marAllAsUnread" class="btn btn-info">Segna come non letti</button>
                                 <button type="button" @click="deleteAllTasks" class="btn btn-dark">Cancella tutto</button>
                             </div>
                         </div>
