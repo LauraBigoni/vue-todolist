@@ -27,7 +27,7 @@ Bonus:
 const root = new Vue({
     el: '#root',
     data: {
-        tasks : [
+        tasks: [
             'Vedere le piramidi maya in Messico',
             'Bere caipirinha sulla spiaggia in Brasile',
             'Passare un capodanno a New York',
@@ -36,5 +36,11 @@ const root = new Vue({
             "Nuotare con i delfini nell'oceano",
             'Vedere l’aurora boreale in Islanda',
         ]
-    }
+    },
+    methods: {
+        // Funzione per eliminare le task
+        deleteTask(index) {
+            this.tasks.splice(index, 1);
+        }
+    },
 });

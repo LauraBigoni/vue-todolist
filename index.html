@@ -40,12 +40,13 @@
                             </div>
                         </div>
                         <ul class="list-group my-5">
-                            <li class="list-group-item d-flex justify-content-between align-items-center" v-for="(task, index) in tasks">
+                            <li class="list-group-item d-flex justify-content-between align-items-center"
+                                v-for="(task, index) in tasks">
                                 <div> {{ task }} </div>
-                                <button type="button" class="btn-close cs-btn-close"></button>
+                                <button type="button" class="btn-close cs-btn-close" @click="deleteTask(index)"></button>
                             </li>
                         </ul>
-                        <h3 class="text-center"> Non ci sono altri elementi nella tua lista.</h3>
+                        <h3 class="text-center"> Non ci sono altre task nella tua lista.</h3>
                         <!-- checkbox:
                         <i class="far fa-square"></i>
                         <i class="far fa-check-square"></i> -->
