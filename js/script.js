@@ -50,6 +50,9 @@ const root = new Vue({
                 this.tasks.push({text: newTask , done: false});
             }
             this.newTasks = '';
+
+            // Oppure uso lo spread
+            // this.tasks = [...this.tasks , this.newTasks]
         },
         // Toggle checkbox to reverse true/false
         toggleTasksCheck(index) {
