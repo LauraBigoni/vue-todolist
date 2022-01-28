@@ -51,5 +51,13 @@ const root = new Vue({
             }
             this.newTasks = '';
         },
+        // Toggle checkbox to reverse true/false
+        toggleTasksCheck(index) {
+            const toggleTasks = this.tasks.map((task,i) => {
+                if (i === index) task.done = !task.done;
+            return task;
+            });
+            this.tasks = toggleTasks;
+        },
     },
 });
