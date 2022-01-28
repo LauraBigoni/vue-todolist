@@ -50,7 +50,6 @@ const root = new Vue({
                 this.tasks.push({text: newTask , done: false});
             }
             this.newTasks = '';
-
             // Oppure uso lo spread
             // this.tasks = [...this.tasks , this.newTasks]
         },
@@ -61,7 +60,6 @@ const root = new Vue({
             return task;
             });
             this.tasks = toggleTasks;
-
             // Oppure
             // this.tasks[index].done = !this.tasks[index].done;
         },

@@ -36,19 +36,29 @@
                         <div class="input-group my-5">
                             <input type="text" class="form-control" v-model="newTasks" @keyup.enter="addNewTasks">
                             <div class="input-group-append">
-                                <button class="btn cs-btn-success btn-success" type="button" @click="addNewTasks">Add task</button>
+                                <button class="btn cs-btn-success btn-success" type="button" @click="addNewTasks">Add
+                                    task</button>
                             </div>
                         </div>
                         <ul v-if="tasks.length" class="list-group my-5">
                             <li class="list-group-item d-flex justify-content-between align-items-center"
                                 v-for="(task, index) in tasks">
-                                <div role="button" @click="toggleTasksCheck(index)" class="flex-grow-1"> 
+                                <div role="button" @click="toggleTasksCheck(index)" class="flex-grow-1">
                                     <i class="far" :class="task.done === true ? 'fa-check-square' : 'fa-square'"></i>
-                                    <span :class="{done : task.done}">{{ task.text }}</span> </div>
-                                <button type="button" class="btn-close cs-btn-close" @click="deleteTask(index)"></button>
+                                    <span :class="{done : task.done}">{{ task.text }}</span>
+                                </div>
+                                <button type="button" class="btn-close cs-btn-close"
+                                    @click="deleteTask(index)"></button>
                             </li>
                         </ul>
                         <h3 v-else class="text-center"> Non ci sono altre task nella tua lista.</h3>
+                        <div class="actions text-center">
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-light">Segna come letti</button>
+                                <button type="button" class="btn btn-info">Segna come non letti</button>
+                                <button type="button" class="btn btn-dark">Cancella tutto</button>
+                            </div>
+                        </div>
                     </div>
                 </main>
             </div>
