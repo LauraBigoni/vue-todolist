@@ -41,6 +41,6 @@ const root = new Vue({
         // Funzione per eliminare le task
         deleteTask(index) {
             this.tasks.splice(index, 1);
-        }
+        },
     },
 });
