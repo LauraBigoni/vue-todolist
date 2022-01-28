@@ -58,6 +58,9 @@ const root = new Vue({
             return task;
             });
             this.tasks = toggleTasks;
+
+            // Oppure
+            // this.tasks[index].done = !this.tasks[index].done;
         },
     },
 });
