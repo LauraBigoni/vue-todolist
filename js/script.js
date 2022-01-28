@@ -27,6 +27,14 @@ Bonus:
 const root = new Vue({
     el: '#root',
     data: {
-
+        tasks : [
+            'Vedere le piramidi maya in Messico',
+            'Bere caipirinha sulla spiaggia in Brasile',
+            'Passare un capodanno a New York',
+            'Visitare la città blu in Marocco',
+            'Attraversare gli Stati Uniti sulla route 66',
+            "Nuotare con i delfini nell'oceano",
+            'Vedere l’aurora boreale in Islanda',
+        ]
     }
 });
