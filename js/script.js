@@ -30,7 +30,7 @@ const root = new Vue({
         tasks: [
             { text: 'Vedere le piramidi maya in Messico', done: true },
             { text: 'Bere caipirinha sulla spiaggia in Brasile', done: false },
-            { text: 'Passare un capodanno a New York', done: false },
+            { text: 'Passare un capodanno a New York', done: true },
             { text: 'Visitare la città blu in Marocco', done: false },
             { text: 'Attraversare gli Stati Uniti sulla route 66', done: true },
             { text: "Nuotare con i delfini nell'oceano", done: false },

@@ -32,3 +32,7 @@ i.fa-check-square {
 .cs-btn-close {
     font-size: 10px;
 }
+
+.done {
+    text-decoration: line-through;
+}
