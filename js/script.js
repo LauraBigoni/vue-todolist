@@ -43,5 +43,13 @@ const root = new Vue({
         deleteTask(index) {
             this.tasks.splice(index, 1);
         },
+        // Funzione per aggiungere nuove task
+        addNewTasks() {
+            const newTask = this.newTasks.trim();
+            if(newTask) {
+                this.tasks.push({text: newTask , done: false});
+            }
+            this.newTasks = '';
+        },
     },
 });

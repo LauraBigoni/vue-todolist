@@ -15,10 +15,15 @@ header {
     border-color: rgb(0, 192, 202);
 }
 
-.cs-btn-success:hover {
+.cs-btn-success:hover, .cs-btn-success:visited, .cs-btn-success:active {
     background-color: rgb(0, 173, 181);
     border-color: rgb(0, 192, 202);
     opacity: 0.5;
+}
+
+.cs-btn-success:focus {
+    background-color: rgb(0, 173, 181);
+    border-color: rgb(0, 192, 202);
 }
 
 i {
