@@ -34,9 +34,9 @@
                 <main class="w-75 mx-auto">
                     <div id="todo-container">
                         <div class="input-group my-5">
-                            <input type="text" class="form-control" v-model="newTasks">
+                            <input type="text" class="form-control" v-model="newTasks" @keyup.enter="addNewTasks">
                             <div class="input-group-append">
-                                <button class="btn cs-btn-success btn-success" type="button" @click="addNewTasks" @keyup.enter="addNewTasks">Add task</button>
+                                <button class="btn cs-btn-success btn-success" type="button" @click="addNewTasks">Add task</button>
                             </div>
                         </div>
                         <ul v-if="tasks.length" class="list-group my-5">
