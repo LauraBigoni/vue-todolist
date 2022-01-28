@@ -27,6 +27,7 @@ Bonus:
 const root = new Vue({
     el: '#root',
     data: {
+        newTasks: '',
         tasks: [
             { text: 'Vedere le piramidi maya in Messico', done: true },
             { text: 'Bere caipirinha sulla spiaggia in Brasile', done: false },
