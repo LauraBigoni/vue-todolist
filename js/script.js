@@ -28,13 +28,13 @@ const root = new Vue({
     el: '#root',
     data: {
         tasks: [
-            'Vedere le piramidi maya in Messico',
-            'Bere caipirinha sulla spiaggia in Brasile',
-            'Passare un capodanno a New York',
-            'Visitare la città blu in Marocco',
-            'Attraversare gli Stati Uniti sulla route 66',
-            "Nuotare con i delfini nell'oceano",
-            'Vedere l’aurora boreale in Islanda',
+            { text: 'Vedere le piramidi maya in Messico', done: true },
+            { text: 'Bere caipirinha sulla spiaggia in Brasile', done: false },
+            { text: 'Passare un capodanno a New York', done: false },
+            { text: 'Visitare la città blu in Marocco', done: false },
+            { text: 'Attraversare gli Stati Uniti sulla route 66', done: true },
+            { text: "Nuotare con i delfini nell'oceano", done: false },
+            { text: 'Vedere l’aurora boreale in Islanda', done: false },
         ]
     },
     methods: {
