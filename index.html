@@ -36,7 +36,7 @@
                         <div class="input-group my-5">
                             <input type="text" class="form-control" v-model="newTasks">
                             <div class="input-group-append">
-                                <button class="btn cs-btn-success btn-success" type="button" @click="addNewTasks">Add task</button>
+                                <button class="btn cs-btn-success btn-success" type="button" @click="addNewTasks" @keyup="addNewTasks">Add task</button>
                             </div>
                         </div>
                         <ul v-if="tasks.length" class="list-group my-5">
