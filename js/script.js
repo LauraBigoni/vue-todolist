@@ -63,5 +63,8 @@ const root = new Vue({
             // Oppure
             // this.tasks[index].done = !this.tasks[index].done;
         },
+        deleteAllTasks() {
+            this.tasks = [];
+        }
     },
 });
